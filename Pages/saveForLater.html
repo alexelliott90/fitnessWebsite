@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Alex's Fitness Page - Saved Files</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link href = "../fitness.css" rel = "stylesheet" type = "text/css">
+</head>
+
+<body class="backgroundPage" onload="saveForLaterOnload()">
+    <script type="text/javascript" src="../fitnessPage.js"></script>
+    <div class="p-3 mb-2 text-dark">
+        <div class="container-fluid">
+            <div class="row row-flex mt-3">
+                <div class="col-md-1">
+                </div>
+                
+                <div class="col-md-10">
+                    <h1 id="pageTitle"><b>Items Saved for Later</b></h1>
+                </div>
+
+                <div class="col-md-1">
+                    
+                </div>
+
+            </div>
+           
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2 class="secondTitle">Here you will find the items that you have saved on other pages</h2>
+            </div>
+            
+            <div class="row-full">
+                <h2 class="secondTitle">There are two sections: Images and Information</h2>
+            </div>
+
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2>Your saved images</h2>
+            </div>
+            
+            <div class="row-full row-flex mt-3" id="savedImages">
+                <!--saved images in here-->
+            </div>
+
+            <!--cario exercises arranged in two columns, with their images on the same row-->
+            <div class="row-full mt-3 backgroundBlue bg-gradient whiteText">
+                <h2 class="topicTitle" style="color: white; text-align: left;">Your saved information</h2>
+            </div>
+
+            <div class="row-full row-flex mt-3" id="savedInfoList">
+                <!--saved info in here-->
+            </div>
+
+        </div>
+    </div> 
+    <!--footer with links to other pages on the site, and back to top link-->
+    <footer>
+        <div class="row-full row-flex mt-3">
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../index.html" class="topicTitle">Home Page</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/exercise.html" class="topicTitle">Exercise</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/nutrition.html" class="topicTitle">Nutrition</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/mindset.html" class="topicTitle">Mindset</A>
+                </div>
+            </div>
+        </div>
+        <a href = "#pageTitle" style="padding-left: 2vw;">Back to top</a>
+    </footer>
+</body>
+
+</html>

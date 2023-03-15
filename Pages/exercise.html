@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Alex's Fitness Page - Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link href = "../fitness.css" rel = "stylesheet" type = "text/css">
+</head>
+
+<body class="backgroundPage" onload="childPageLoad()">
+    <script type="text/javascript" src="../fitnessPage.js"></script>
+    <div class="p-3 mb-2 text-dark">
+        <div class="container-fluid">
+            <div class="row row-flex mt-3">
+                <div class="col-md-1">
+                </div>
+                
+                <div class="col-md-10">
+                    <h1 id="pageTitle"><b>Exercise</b></h1>
+                </div>
+
+                <div class="col-md-1">
+                </div>
+
+            </div>
+           
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2 class="secondTitle">Exercise is important for health and is proven to lead to a better quality of life</h2>
+            </div>
+            
+            <div class="row-full">
+                <h2 class="secondTitle">This page is divided into my two key pillars to exercise: Weights and Cardio</h2>
+            </div>
+
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2>Weights</h2>
+                <h3>My favourite weights exercises</h3>
+            </div>
+            <!--Exercise topics, arranged in three columns across the page-->
+            <div class="row-full row-flex mt-3">
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content descriptionBlocks">
+                        <div class="container" style="display: table-cell">
+                            <h2 class="topicTitle" id="exerInfoTitle1">Deadlift</h2>
+                            <p id="exerInfo1">This is a big lift, so form is very important. Load a barbell with the appropriate weight for your fitness level (start light to begin with).
+                                Start with the weight on the floor, with your hips lower than your back, stand up and bring the weight to your hips (with your arms straight)
+                                and then reverse the movement and place it back on the floor. See an example video below.
+                            </p>
+                            <label class="checkbox-inline saveText fitnessCheckbox" for="exerInfoCheckbox1Box" id="exerInfoCheckbox1"></label>
+                                <input type="checkbox" name="exerInfo1" id="exerInfoCheckbox1Box" onclick='saveItem("exerInfo1", "exerInfoTitle1", "exerInfoCheckbox1", this.id, "text")'>
+                                Save for later
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content descriptionBlocks">
+                        <h2 class="topicTitle" id="exerInfoTitle2">Bench Press</h2>
+                        <p id="exerInfo2">Head to a bench in your gym, and load a barbell with the appropriate weight for your fitness level (start light to begin with).
+                            Lie on the bench and then press the bar upwards until your arms are fully extended, and then bring the bar back down again.
+                        </p>
+                        <label class="checkbox-inline saveText fitnessCheckbox" for="exerInfoCheckbox2Box" id="exerInfoCheckbox2"></label>
+                            <input type="checkbox" name="exerInfo2" id="exerInfoCheckbox2Box" onclick='saveItem("exerInfo2", "exerInfoTitle2", "exerInfoCheckbox2", this.id, "text")'>
+                            Save for later
+                    </div>
+                </div>
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <h2 class="topicTitle" id="exerInfoTitle3">Dips</h2>
+                        <p id="exerInfo3">Line up your arms on the dip bars so that they are in line with your shoulders, then push your body up until your arms are straight and then 
+                            come back down again until your shoulders are in line with your elbows, and then repeat.
+                        </p>
+                        <label class="checkbox-inline saveText fitnessCheckbox" for="exerInfoCheckbox3Box" id="exerInfoCheckbox3"></label>
+                            <input type="checkbox" name="exerInfo3" id="exerInfoCheckbox3Box" onclick='saveItem("exerInfo3", "exerInfoTitle3", "exerInfoCheckbox3", this.id, "text")'>
+                            Save for later
+                    </div>
+                </div>
+            </div>
+            <!--images for the exercise topics, arranged in three columns in the row below their respective topics-->
+            <div class="row-full row-flex mt-3">
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <img class="exerciseImage rounded" src="../images/deadlift.png" alt = "Deadlift" id="exerImage1">
+                        <p>Source: Women's Health</p>
+                        <p class="likedMessage" id="likeExerMessage1">Liked!</p>
+                        <div class="container">
+                            <form>
+                                <label class="checkbox-inline saveImage fitnessCheckbox" for="exerImageCheckbox1Box" id="exerImageCheckbox1"></label>
+                                    <input type="checkbox" name="exerImage1" id="exerImageCheckbox1Box" onclick='saveItem("exerImage1", "exerInfoTitle1", "exerImageCheckbox1", this.id, "image")'>
+                                    Save for later
+                                <label class="checkbox-inline fitnessCheckbox" for="likeExerCheckbox1Box" id="likeExerCheckbox1"></label>
+                                    <input type="checkbox" name="likeExer1" id="likeExerCheckbox1Box" onclick='likeItem("likeExerCheckbox1", this.id, "likeExerMessage1")'>
+                                    Like
+                            </form>
+                        </div>
+                        <A HREF="https://www.youtube.com/watch?v=1ZXobu7JvvE&t=1s" class="videoLinks">Link to Example Video</A>
+                    </div>
+                </div>
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <img class="exerciseImage rounded" src="../images/benchPress.jpg" alt = "Bench Press" id="exerImage2">
+                        <p>Source: Men's Health</p>
+                        <p class="likedMessage" id="likeExerMessage2">Liked!</p>
+                        <div class="container">
+                            <form>
+                                <label class="checkbox-inline saveImage fitnessCheckbox" for="exerImageCheckbox2Box" id="exerImageCheckbox2"></label>
+                                    <input type="checkbox" name="exerImage2" id="exerImageCheckbox2Box" onclick='saveItem("exerImage2", "exerInfoTitle2", "exerImageCheckbox2", this.id, "image")'>
+                                    Save for later
+                                <label class="checkbox-inline fitnessCheckbox" for="likeExerCheckbox2Box" id="likeExerCheckbox2"></label>
+                                    <input type="checkbox" name="likeExer2" id="likeExerCheckbox2Box" onclick='likeItem("likeExerCheckbox2", this.id, "likeExerMessage2")'>
+                                    Like
+                            </form>
+                        </div>
+                        <A HREF="https://www.youtube.com/watch?v=SCVCLChPQFY" class="videoLinks">Link to Example Video</A>
+                    </div>
+                </div>
+                <div class="col-md-4 background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <img class="exerciseImage rounded" src="../images/dips.jpg" alt = "Deadlift" id="exerImage3">
+                        <p>Source: Men's Health</p>
+                        <p class="likedMessage" id="likeExerMessage3">Liked!</p>
+                        <div class="container">
+                            <form>
+                                <label class="checkbox-inline saveImage fitnessCheckbox" for="exerImageCheckbox3Box" id="exerImageCheckbox3"></label>
+                                    <input type="checkbox" name="exerImage3" id="exerImageCheckbox3Box" onclick='saveItem("exerImage3", "exerInfoTitle3", "exerImageCheckbox3", this.id, "image")'>
+                                    Save for later
+                                <label class="checkbox-inline fitnessCheckbox" for="likeExerCheckbox3Box" id="likeExerCheckbox3"></label>
+                                    <input type="checkbox" name="likeExer3" id="likeExerCheckbox3Box" onclick='likeItem("likeExerCheckbox3", this.id, "likeExerMessage3")'>
+                                    Like
+                            </form>
+                        </div>
+                        <A HREF="https://www.youtube.com/watch?v=o2qX3Zb5mvg" class="videoLinks">Link to Example Video</A>
+                    </div>
+                </div>
+            </div>
+            <!--cario exercises arranged in two columns, with their images on the same row-->
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2 class="topicTitle" style="color: white; text-align: left;">Cardio</h2>
+                <h3>My favourite cardio exercises</h3>
+            </div>
+
+            <div class="row-full row-flex mt-3">
+                
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <h2 class="topicTitle" id="exerInfoTitle4">Running</h2>
+                        <p id="exerInfo4">Running is an excellent way to build cardiovascular fitness, especially as you can do it with minimum equipment. If you are
+                            new to running, start with short distances (around 1km) and build up the distance each time you go running. Always
+                            have some recovery time between runs (at least a couple of days when you start). A great way to
+                            motivate yourself is to join an event and then train for it - for example, you could aim to run
+                            in your local parkrun, which is a 5km free run every saturday morning at hundreds of locations in the UK
+                            and abroad.
+                        </p>
+                        <label class="checkbox-inline saveText fitnessCheckbox" for="exerInfoCheckbox4Box" id="exerInfoCheckbox4"></label>
+                            <input type="checkbox" name="exerInfo4" id="exerInfoCheckbox4Box" onclick='saveItem("exerInfo4", "exerInfoTitle4", "exerInfoCheckbox4", this.id, "text")'>
+                            Save for later
+                        <img class="exerciseImage rounded" src="../images/parkrun.jpg" alt = "Running" id="exerImage4">
+                        <p>Source: Parkrun</p>
+                        <p class="likedMessage" id="likeExerMessage4">Liked!</p>
+                        <div class="container">
+                            <form>
+                                <label class="checkbox-inline saveImage fitnessCheckbox" for="exerImageCheckbox4Box" id="exerImageCheckbox4"></label>
+                                    <input type="checkbox" name="exerImage4" id="exerImageCheckbox4Box" onclick='saveItem("exerImage4", "exerInfoTitle4", "exerImageCheckbox4", this.id, "image")'>
+                                    Save for later
+                                <label class="checkbox-inline fitnessCheckbox" for="likeExerCheckbox4Box" id="likeExerCheckbox4"></label>
+                                    <input type="checkbox" name="likeExer4" id="likeExerCheckbox4Box" onclick='likeItem("likeExerCheckbox4", this.id, "likeExerMessage4")'>
+                                    Like
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content my-auto">
+                        <h2 class="topicTitle" id="exerInfoTitle5">Cycling</h2>
+                        <p id="exerInfo5">Cycling is another great way to build cardio fitness, and can help to build muscle in other
+                            parts of your legs that running does not. This is important to prevent injury. You dont need to have
+                            the most expensive bike in the world - just a basic bike is good to start out with, and then just
+                            get out into your local area and explore whilst building your fitness.
+                        </p>
+                        <label class="checkbox-inline saveText fitnessCheckbox" for="exerInfoCheckbox5Box" id="exerInfoCheckbox5"></label>
+                            <input type="checkbox" name="exerInfo5" id="exerInfoCheckbox5Box" onclick='saveItem("exerInfo5", "exerInfoTitle5", "exerInfoCheckbox5", this.id, "text")'>
+                            Save for later
+                        <img class="exerciseImage rounded" src="../images/cycling.jpg" alt = "Cycling" id="exerImage5">
+                        <p>Source: Bicycling.com</p>
+                        <p class="likedMessage" id="likeExerMessage5">Liked!</p>
+                        <div class="container">
+                            <form>
+                                <label class="checkbox-inline saveImage fitnessCheckbox" for="exerImageCheckbox5Box" id="exerImageCheckbox5"></label>
+                                    <input type="checkbox" name="exerImage5" id="exerImageCheckbox5Box" onclick='saveItem("exerImage5", "exerInfoTitle5", "exerImageCheckbox5", this.id, "image")'>
+                                    Save for later
+                                <label class="checkbox-inline fitnessCheckbox" for="likeExerCheckbox5Box" id="likeExerCheckbox5"></label>
+                                    <input type="checkbox" name="likeExer5" id="likeExerCheckbox5Box" onclick='likeItem("likeExerCheckbox5", this.id, "likeExerMessage5")'>
+                                    Like
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    <!--footer with links to other pages on the site, and back to top link-->
+    <footer>
+        <div class="row-full row-flex mt-3">
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../index.html" class="topicTitle">Home Page</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/nutrition.html" class="topicTitle">Nutrition</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/mindset.html" class="topicTitle">Mindset</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/saveForLater.html" class="topicTitle">Saved Items</A>
+                </div>
+            </div>
+        </div>
+        <a href = "#pageTitle" style="padding-left: 2vw;">Back to top</a>
+    </footer>
+</body>
+
+</html>

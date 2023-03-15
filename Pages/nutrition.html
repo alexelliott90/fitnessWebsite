@@ -1,0 +1,127 @@
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <title>Alex's Fitness Page - Nutrition</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous">
+        <link href = "../fitness.css" rel = "stylesheet" type = "text/css">
+    </head>
+
+    <body class="backgroundPage" onload="childPageLoad()">
+        <script type="text/javascript" src="../fitnessPage.js"></script>
+        <div class="p-3 mb-2 text-dark">
+            <div class="container-fluid">
+                <div class="row row-flex mt-3">
+                    <div class="col-md-1">
+                    </div>
+                    
+                    <div class="col-md-10">
+                        <h1 id="pageTitle"><b>Nutrition</b></h1>
+                    </div>
+
+                    <div class="col-md-1">
+                    </div>
+
+                </div>
+            
+                <div class="row-full backgroundBlue bg-gradient whiteText">
+                    <h2 class="secondTitle">Nutrition is as important for health as exercise, will improve the effects of your exercise</h2>
+                </div>
+                
+
+                <div class="row-full backgroundBlue bg-gradient whiteText">
+                    <h2 class="secondTitle">There are two parts to your nutrition - Food and Drink!</h2>
+                </div>
+            </div>
+        </div> 
+        <!--content divided into one row and two columns (food, and drink)-->
+        <div class="row-full row-flex mt-3">
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <h2 class="topicTitle" id="foodInfoTitle1">Food</h2>
+                    <p id="foodInfo1">Food is not just about calories. A balanced diet with plenty of fresh food will improve the effects of your exercise,
+                        and improve your gut health. Eat plenty of fruit and veg, proteins, carbohydrates and 'good fats'<br><br>
+                        Personally, I avoid processed protein shakes and other 'health supplements' as these are full of additives and in the past 
+                        have led me to put on weight. The best thing to fuel your exercise is good carbonhydrate and natural sources of protein!</p>
+                    <div class="container">
+                        <label class="checkbox-inline saveText fitnessCheckbox" for="foodInfoCheckbox1Box" id="foodInfoCheckbox1"></label>
+                        <input type="checkbox" name="foodInfo1" id="foodInfoCheckbox1Box" onclick='saveItem("foodInfo1", "foodInfoTitle1", "foodInfoCheckbox1", this.id, "text")'>
+                        Save for later
+                    </div><br>
+                    <img class="exerciseImage rounded" src="../images/food.jpg" alt = "Food" id="foodImage1">
+                    <p>Source: Prevention.com</p>
+                    <p class="likedMessage" id="likeFoodMessage1">Liked!</p>
+                    <div class="container">
+                        <form>
+                            <label class="checkbox-inline fitnessCheckbox" for="foodImageCheckbox1Box" id="foodImageCheckbox1"></label>
+                                <input type="checkbox" name="foodImage1" id="foodImageCheckbox1Box" onclick='saveItem("foodImage1", "foodInfoTitle1", "foodImageCheckbox1", this.id, "image")'>
+                                Save for later
+                            <label class="checkbox-inline fitnessCheckbox" for="likeFoodCheckbox1Box" id="likeFoodCheckbox1"></label>
+                                <input type="checkbox" name="likeFood1" id="likeFoodCheckbox1Box" onclick='likeItem("likeFoodCheckbox1", this.id, "likeFoodMessage1")'>
+                                Like<br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content my-auto">
+                    <h2 class="topicTitle" id="foodInfoTitle2">Drink</h2>
+                    <p id="foodInfo2">What you drink is equally as important as what you eat. Avoiding processed drinks is a good idea - such as sweetened fizzy drinks
+                        and processed fruit juice. Drink plenty of water before, during and after exercise, and avoid energy drinks. Coffee and tea
+                        are known to have some positive health impacts, but avoid too much caffeine!<br><br>
+                        It is common to drink alcohol, and I do enjoy beer and wine as a treat - but be careful as
+                        too much alcohol will likely lead to weight gain and will reduce the effect of your exercise!
+                    </p>
+                    <div class="container">
+                    <label class="checkbox-inline saveText fitnessCheckbox" for="foodInfoCheckbox2Box" id="foodInfoCheckbox2"></label>
+                        <input type="checkbox" name="foodInfo2" id="foodInfoCheckbox2Box" onclick='saveItem("foodInfo2", "foodInfoTitle2", "foodInfoCheckbox2", this.id, "text")'>
+                        Save for later
+                    </div><br>
+                    <img class="exerciseImage rounded" src="../images/water.jpg" alt = "Water" id="foodImage2">
+                    <p>Source: Harvard Health</p>
+                    <p class="likedMessage" id="likeFoodMessage2">Liked!</p>
+                    <div class="container">
+                        <form>
+                            <label class="checkbox-inline fitnessCheckbox" for="foodImageCheckbox2Box" id="foodImageCheckbox2"></label>
+                                <input type="checkbox" name="foodImage2" id="foodImageCheckbox2Box" onclick='saveItem("foodImage2", "foodInfoTitle2", "foodImageCheckbox2", this.id, "image")'>
+                                Save for later
+                            <label class="checkbox-inline fitnessCheckbox" for="likeFoodCheckbox2Box" id="likeFoodCheckbox2"></label>
+                                <input type="checkbox" name="likeFood2" id="likeFoodCheckbox2Box" onclick='likeItem("likeFoodCheckbox2", this.id, "likeFoodMessage2")'>
+                                Like<br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer with links to other pages on the site, and back to top link-->
+        <footer>
+            <div class="row-full row-flex mt-3">
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <A HREF="../index.html" class="topicTitle">Home Page</A>
+                    </div>
+                </div>
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <A HREF="../pages/exercise.html" class="topicTitle">Exercise</A>
+                    </div>
+                </div>
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <A HREF="../pages/mindset.html" class="topicTitle">Mindset</A>
+                    </div>
+                </div>
+                <div class="col-md background columns">
+                    <div class="p-1 columnBorder rounded content">
+                        <A HREF="../pages/saveForLater.html" class="topicTitle">Saved Items</A>
+                    </div>
+                </div>
+            </div>
+            <a href = "#pageTitle" style="padding-left: 2vw;">Back to top</a>
+        </footer>
+    </body>
+
+    </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Alex's Fitness Page - Nutrition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link href = "../fitness.css" rel = "stylesheet" type = "text/css">
+</head>
+
+<body class="backgroundPage" onload="childPageLoad()">
+    <script type="text/javascript" src="../fitnessPage.js"></script>
+    <div class="p-3 mb-2 text-dark">
+        <div class="container-fluid">
+            <div class="row row-flex mt-3">
+                <div class="col-md-1">
+                </div>
+                
+                <div class="col-md-10">
+                    <h1 id="pageTitle"><b>Mindset</b></h1>
+                </div>
+
+                <div class="col-md-1">
+                </div>
+
+            </div>
+           
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2 class="secondTitle">Mental health is incredibly important, in fact it is linked closely with both diet and exercise!</h2>
+            </div>
+            
+
+            <div class="row-full backgroundBlue bg-gradient whiteText">
+                <h2 class="secondTitle">Some of the key things to my mental health are: Sleep, Mindfulness, and Hobbies</h2>
+            </div>
+
+        </div>
+    </div> 
+    <!--mental health topics divided into three columns in one row-->
+    <div class="row-full row-flex mt-3">
+        <div class="col-md-4 background columns">
+            <div class="p-1 columnBorder rounded content">
+                <div class="container" style="display: table-cell">
+                    <h2 class="topicTitle" id="mindInfoTitle1">Sleep</h2>
+                    <p id="mindInfo1">Sleep is incredibly important to recovery from exercise and to your mental health.
+                        I have lost count of the amount of nights that I have had poor sleep due to
+                        work stress or other life stresses playing with my mind.<br><br>
+                        <strong>You can improve this with some simple steps</strong><br><br>
+                        Start by creating a better bedtime routine, and by taking the time to relax before bed
+                        by putting away digital devices and doing something unrelated to work. Avoid eating in the
+                        two hours before bed, and try to go to bed at the same time each night.
+                    </p>
+                    <label class="checkbox-inline saveText fitnessCheckbox" for="mindInfoCheckbox1Box" id="mindInfoCheckbox1"></label>
+                        <input type="checkbox" name="mindInfo1" id="mindInfoCheckbox1Box" onclick='saveItem("mindInfo1", "mindInfoTitle1", "mindInfoCheckbox1", this.id, "text")'>
+                        Save for later<br><br>
+                    <img class="exerciseImage rounded" src="../images/sleep.jpeg" alt = "Sleeping" id="mindImage1">
+                    <p>Source: Age UK</p>
+                    <p class="likedMessage" id="likeMindMessage1">Liked!</p>
+                    <div class="container">
+                        <form>
+                            <label class="checkbox-inline saveImage fitnessCheckbox" for="mindImageCheckbox1Box" id="mindImageCheckbox1"></label>
+                                <input type="checkbox" name="mindImage1" id="mindImageCheckbox1Box" onclick='saveItem("mindImage1", "mindInfoTitle1", "mindImageCheckbox1", this.id, "image")'>
+                                Save for later
+                            <label class="checkbox-inline fitnessCheckbox" for="likeMindCheckbox1Box" id="likeMindCheckbox1"></label>
+                                <input type="checkbox" name="likeMind1" id="likeMindCheckbox1Box" onclick='likeItem("likeMindCheckbox1", this.id, "likeMindMessage1")'>
+                                Like
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 background columns">
+            <div class="p-1 columnBorder rounded content">
+                <h2 class="topicTitle" id="mindInfoTitle2">Mindfulness</h2>
+                <p id="mindInfo2">Mindfulness is important and it ties closely with sleep. Take the time out of your day
+                    to be present in the moment, and give your full attention to an activity.<br><br>
+                    One way to do this is to take part in a hobby - this could be exercise (see the exercise page),
+                    or it could be playing a computer game or reading a book. Meditation is also a good way to
+                    train your mind in the art of mindfulness. It might take time, but stick with it!
+                </p>
+                <label class="checkbox-inline saveText fitnessCheckbox" for="mindInfoCheckbox2Box" id="mindInfoCheckbox2"></label>
+                    <input type="checkbox" name="mindInfo2" id="mindInfoCheckbox2Box" onclick='saveItem("mindInfo2", "mindInfoTitle2", "mindInfoCheckbox2", this.id, "text")'>
+                    Save for later<br><br>
+                <img class="exerciseImage rounded" src="../images/yoga.jpeg" alt = "Yoga" id="mindImage2">
+                <p>Source: Verywell Fit</p>
+                <p class="likedMessage" id="likeMindMessage2">Liked!</p>
+                <div class="container">
+                    <form>
+                        <label class="checkbox-inline saveImage fitnessCheckbox" for="mindImageCheckbox2Box" id="mindImageCheckbox2"></label>
+                            <input type="checkbox" name="mindImage2" id="mindImageCheckbox2Box" onclick='saveItem("mindImage2", "mindInfoTitle2", "mindImageCheckbox2", this.id, "image")'>
+                            Save for later
+                        <label class="checkbox-inline fitnessCheckbox" for="likeMindCheckbox2Box" id="likeMindCheckbox2"></label>
+                            <input type="checkbox" name="likeMind2" id="likeMindCheckbox2Box" onclick='likeItem("likeMindCheckbox2", this.id, "likeMindMessage2")'>
+                            Like
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 background columns">
+            <div class="p-1 columnBorder rounded content">
+                <h2 class="topicTitle" id="mindInfoTitle3">Hobbies</h2>
+                <p id="mindInfo3">I touched upon this in the previous column, but it deserves one of its own.
+                    Make sure that you have some activities that you take part in, that are not
+                    related to work. If you are short on time then this is no problem, there are also
+                    hobbies that wont take up too much of your time.<br><br>
+                    You could search the local directories for sports clubs, or take one of your
+                    passions and search for one of these. Use online local directories and social media.
+                </p>
+                <label class="checkbox-inline saveText fitnessCheckbox" for="mindInfoCheckbox3Box" id="mindInfoCheckbox3"></label>
+                    <input type="checkbox" name="mindInfo3" id="mindInfoCheckbox3Box" onclick='saveItem("mindInfo3", "mindInfoTitle3", "mindInfoCheckbox3", this.id, "text")'>
+                    Save for later<br><br>
+                <img class="exerciseImage rounded" src="../images/sailing.jpeg" alt = "Sailing" id="mindImage3">
+                <p>Source: RS Sailing</p>
+                <p class="likedMessage" id="likeMindMessage3">Liked!</p>
+                <div class="container">
+                    <form>
+                        <label class="checkbox-inline saveImage fitnessCheckbox" for="mindImageCheckbox3Box" id="mindImageCheckbox3"></label>
+                            <input type="checkbox" name="mindImage3" id="mindImageCheckbox3Box" onclick='saveItem("mindImage3", "mindInfoTitle3", "mindImageCheckbox3", this.id, "image")'>
+                            Save for later
+                        <label class="checkbox-inline fitnessCheckbox" for="likeMindCheckbox3Box" id="likeMindCheckbox3"></label>
+                            <input type="checkbox" name="likeMind3" id="likeMindCheckbox3Box" onclick='likeItem("likeMindCheckbox3", this.id, "likeMindMessage3")'>
+                            Like
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer with links to other pages on the site, and back to top link-->
+    <footer>
+        <div class="row-full row-flex mt-3">
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../index.html" class="topicTitle">Home Page</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/nutrition.html" class="topicTitle">Nutrition</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/exercise.html" class="topicTitle">Exercise</A>
+                </div>
+            </div>
+            <div class="col-md background columns">
+                <div class="p-1 columnBorder rounded content">
+                    <A HREF="../pages/saveForLater.html" class="topicTitle">Saved Items</A>
+                </div>
+            </div>
+        </div>
+        <a href = "#pageTitle" style="padding-left: 2vw;">Back to top</a>
+    </footer>
+    
+</body>
+
+</html>

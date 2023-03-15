@@ -1,0 +1,132 @@
+/* ID for page title
+*/
+
+#pageTitle{
+    font-size: 4vw;
+    text-align: center;
+    vertical-align: middle;
+    color: navy;
+}
+
+/*Background for dark blue sections*/
+.backgroundBlue{
+    background-color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Background for light blue sections*/
+.backgroundPage{
+    background-color: lightblue;
+}
+
+.whiteText{
+    color: white;
+}
+
+/*Class to keep column formatting the same*/
+.columns{
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+/*Border class to apply to some of the columns*/
+.columnBorder{
+    border:0.25vw solid navy;
+    background-color: rgb(200, 235, 248);
+}
+
+.secondTitle{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.thirdTitle{
+    text-align: left; 
+    color: navy;
+    font-size: 2vw;
+}
+
+/*Format title for some of the sections on the pages*/
+
+.topicTitle{
+    font-size: 3vw;
+    text-align: center;
+    color: navy;
+}
+
+/*Formatting for link on homepage, and the responsive action when the mouse is hovered over the links*/
+.topicLink{
+    font-size: 3vw;
+    text-align: center;
+    color: navy;
+    border:0.25vw solid rgb(235, 246, 250);
+    border-radius: 1vw;
+    background-color: rgb(235, 246, 250);
+}
+
+.topicLink:hover{
+    opacity:0.6;
+}
+
+/*format for links to external youtube videos*/
+.videoLinks{
+    font-size: 2vw;
+    text-align: center;
+    color: navy;
+}
+
+/*formatting for images across the site*/
+.exerciseImage{
+    display: block;
+    max-width: 20vw;
+    max-height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+/*formatting for the 'liked' text which appears when an item has been liked*/
+.likedMessage{
+    display: none;
+    color: blue;
+}
+
+/*formatting for the titles of user comments*/
+.commentTitle{
+    border-top:0.25vw solid rgb(94, 94, 141);
+    word-wrap: break-word;
+    font-size: 2vw;
+    color: navy;
+}
+
+/*Creating a row class to create rows which fill the viewport
+*/
+
+.row-full{
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+   }
+
+/*class to ensure that rows are the same height across the page*/
+.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  [class*="col-"] {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    height: 100%;
+  }
+
